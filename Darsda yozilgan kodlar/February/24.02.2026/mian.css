@@ -1,0 +1,103 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Unbounded", sans-serif;
+  text-decoration: none;
+  list-style: none;
+  scroll-behavior: smooth;
+}
+
+.container {
+  width: 100%;
+  max-width: 1360px;
+  margin: 0 auto;
+}
+
+.avfzalliklarimiz {
+  margin-top: 120px;
+  margin-bottom: 100px;
+}
+.avfzalliklarimiz h1 {
+  font-size: 40px;
+  line-height: 44px;
+  font-weight: 700;
+  color: #020C31;
+  margin-bottom: 32px;
+}
+.avfzalliklarimiz .avfzalliklarimiz_box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-top: 32px;
+  border-top: 1px solid #CCCCCC;
+  margin-bottom: 96px;
+}
+.avfzalliklarimiz .avfzalliklarimiz_box .avfzalliklarimiz_cards img {
+  width: 70px;
+  height: 56px;
+  margin-bottom: 20px;
+}
+.avfzalliklarimiz .avfzalliklarimiz_box .avfzalliklarimiz_cards h2 {
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 600;
+  color: #020C31;
+  margin-bottom: 8px;
+}
+.avfzalliklarimiz .avfzalliklarimiz_box .avfzalliklarimiz_cards p {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #676D83;
+}
+.avfzalliklarimiz .avfzalliklarimiz_bottom {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+  border-radius: 16px;
+  background: url(./Images/Background_image.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 60px 116px 120px;
+}
+.avfzalliklarimiz .avfzalliklarimiz_bottom .avfzalliklarimiz_bottom_box {
+  text-align: start;
+}
+.avfzalliklarimiz .avfzalliklarimiz_bottom .avfzalliklarimiz_bottom_box h1 {
+  width: 558px;
+  font-size: 40px;
+  line-height: 48px;
+  font-weight: 700;
+  color: #FAFAFA;
+  margin-bottom: 20px;
+}
+.avfzalliklarimiz .avfzalliklarimiz_bottom .avfzalliklarimiz_bottom_box p {
+  width: 309px;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #FFFFFF;
+  margin-bottom: 136px;
+}
+.avfzalliklarimiz .avfzalliklarimiz_bottom .avfzalliklarimiz_bottom_box button {
+  width: 218px;
+  height: 48px;
+  background-color: #3375FF;
+  border: none;
+  border-radius: 62px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #FFFFFF;
+}
+
+@media (max-width: 1100px) {
+  .avfzalliklarimiz .avfzalliklarimiz_box .avfzalliklarimiz_cards {
+    width: 45%;
+    margin-bottom: 20px;
+  }
+  .avfzalliklarimiz .avfzalliklarimiz_bottom_box {
+    transform: scale(0.7);
+  }
+}/*# sourceMappingURL=mian.css.map */
