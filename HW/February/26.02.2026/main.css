@@ -1,0 +1,313 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+  list-style: none;
+  scroll-behavior: smooth;
+}
+
+.dashboard {
+  display: flex;
+  gap: 100px;
+  background-color: #FAFBFF;
+  padding-top: 36px;
+  padding-left: 28px;
+  padding-bottom: 78px;
+}
+
+header {
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 555px;
+}
+header .header_top {
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+}
+header .header_top .settings {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 8px;
+}
+header .header_top .settings i {
+  font-size: 30px;
+  color: #000000;
+}
+header .header_top .settings h1 {
+  font-size: 26px;
+  font-weight: 600;
+  color: #000000;
+}
+header .header_top ul {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+header .header_top ul li {
+  width: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 8px;
+  padding: 11px;
+}
+header .header_top ul li div {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+header .header_top ul li div i {
+  font-size: 24px;
+  color: #9197B3;
+}
+header .header_top ul li div a {
+  font-size: 14px;
+  font-weight: 400;
+  color: #9197B3;
+  letter-spacing: -1;
+}
+header .header_top ul li i {
+  color: #9197B3;
+}
+header .header_top ul li:hover {
+  cursor: pointer;
+  background-color: #5932EA;
+}
+header .header_top ul li:hover i {
+  color: #FFFFFF;
+}
+header .header_top ul li:hover a {
+  color: #FFFFFF;
+}
+header .header_bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 35px;
+}
+header .header_bottom div h4 {
+  font-size: 14px;
+  font-weight: 500;
+  color: #000000;
+}
+header .header_bottom div p {
+  font-size: 12px;
+  font-weight: 400;
+  color: #757575;
+}
+header .header_bottom i {
+  font-size: 24px;
+  color: #757575;
+}
+
+.container {
+  width: 968px;
+}
+
+.main_top {
+  width: 968px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+.main_top h1 {
+  font-size: 24px;
+  font-weight: 500;
+  color: #000000;
+}
+.main_top .search {
+  width: 216px;
+  height: 38px;
+  border-radius: 12px;
+  background-color: #FFFFFF;
+  box-shadow: 0px 10px 60px 0px rgba(226, 236, 249, 0.5019607843);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 8px;
+  padding: 8px;
+}
+.main_top .search i {
+  font-size: 20px;
+  color: #7E7E7E;
+}
+.main_top .search form {
+  width: 100%;
+}
+.main_top .search form input {
+  border: none;
+}
+.main_top .search form input:focus {
+  outline: none;
+}
+
+.study_info {
+  width: 100%;
+  border-radius: 30px;
+  background: #FFFFFF;
+  box-shadow: 0px 10px 60px 0px rgba(226, 236, 249, 0.5019607843);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 56px;
+  padding: 32px 66px;
+  margin-bottom: 40px;
+}
+.study_info .cards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 81px;
+}
+.study_info .cards .box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.study_info .cards .box .left {
+  width: 84px;
+  height: 84px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: linear-gradient(201.18deg, #D3FFE7 3.14%, #EFFFF6 86.04%);
+}
+.study_info .cards .box .left i {
+  font-size: 35px;
+  color: #00AC4F;
+}
+.study_info .cards .box .right p {
+  font-size: 14px;
+  font-weight: 400;
+  color: #ACACAC;
+  margin-bottom: 4px;
+}
+.study_info .cards .box .right strong {
+  font-size: 32px;
+  font-weight: 600;
+  color: #333333;
+}
+.study_info .cards .border {
+  height: 87px;
+  border: 1px solid #F0F0F0;
+}
+
+.students {
+  border-radius: 30px;
+  background: #FFFFFF;
+  box-shadow: 0px 10px 60px 0px rgba(226, 236, 249, 0.5019607843);
+  padding: 30px 38px;
+  padding-bottom: 94px;
+}
+.students .students_top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 49px;
+}
+.students .students_top .student_info_box h1 {
+  font-size: 22px;
+  font-weight: 600;
+  color: #000000;
+  margin-bottom: 7px;
+}
+.students .students_top .student_info_box p {
+  font-size: 14px;
+  font-weight: 400;
+  color: #16C098;
+}
+.students .students_top .form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+.students .students_top .form form {
+  width: 216px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  background-color: #F9FBFF;
+  padding: 7px;
+}
+.students .students_top .form form i {
+  font-size: 24px;
+  color: #7E7E7E;
+}
+.students .students_top .form form input {
+  background: #F9FBFF;
+  border: none;
+}
+.students .students_top .form form input:focus {
+  outline: none;
+}
+.students .students_top .form .select {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  background: #F9FBFF;
+  padding: 10px 15px;
+}
+.students .students_top .form .select p {
+  font-size: 12px;
+  font-weight: 400;
+  color: #7E7E7E;
+}
+.students .students_top .form .select select {
+  border: none;
+  background: #F9FBFF;
+}
+.students .students_top .form .select select option {
+  font-size: 12px;
+  font-weight: 600;
+}
+.students .students_top .form .select select:focus {
+  outline: none;
+}
+.students .student_bottom table {
+  width: 100%;
+  text-align: left;
+}
+.students .student_bottom table thead tr th {
+  font-size: 14px;
+  font-weight: 500;
+  color: #B5B7C0;
+  border-bottom: 1px solid #EEEEEE;
+  padding-bottom: 14px;
+}
+.students .student_bottom table tbody tr td {
+  font-size: 14px;
+  font-weight: 500;
+  color: #292D32;
+  border-bottom: 1px solid #EEEEEE;
+  padding: 24px 0;
+}
+.students .student_bottom table tbody tr td select {
+  width: 80px;
+  height: 29px;
+  text-align: center;
+  border: 1px solid #00B087;
+  border-radius: 4px;
+  background: rgba(22, 192, 152, 0.3803921569);
+  color: #008767;
+}
+.students .student_bottom table tbody tr td .select-inactive {
+  border: 1px solid #DF0404;
+  background: #FFC5C5;
+  color: #DF0404;
+}
+.students .student_bottom table tbody tr td select:focus {
+  outline: none;
+}/*# sourceMappingURL=main.css.map */
