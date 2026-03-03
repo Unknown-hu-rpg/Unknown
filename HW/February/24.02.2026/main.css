@@ -230,6 +230,9 @@
   color: #FFFFFF;
 }
 
+.service {
+  margin-bottom: 120px;
+}
 .service h1 {
   font-size: 52px;
   line-height: 64px;
@@ -250,10 +253,15 @@
   justify-content: space-between;
 }
 .service .service_box .service_cards {
+  width: 442px;
+  height: 500px;
+  background: #F3F6F6;
   padding: 48px 32px;
+  position: relative;
 }
 .service .service_box .service_cards h1 {
   font-size: 32px;
+  line-height: 100%;
   font-weight: 700;
   color: #020C31;
   margin-bottom: 20px;
@@ -268,4 +276,52 @@
   font-size: 16px;
   font-weight: 400;
   color: #00A9B3;
+}
+.service .service_box .service_cards img {
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  right: 40px;
+  bottom: 40px;
+}
+
+.contact {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 106px;
+  border-radius: 16px;
+  background: radial-gradient(95.44% 490.36% at 92.87% 11.25%, #33A9FF 0%, #33FFF3 100%);
+  padding: 32px;
+}
+.contact img {
+  width: 528px;
+  height: 510px;
+  border-radius: 12px;
+}
+.contact .contact_right {
+  padding: 20px;
+  text-align: start;
+}
+.contact .contact_right img {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 12px;
+}
+.contact .contact_right h1 {
+  font-size: 32px;
+  line-height: 48px;
+  font-weight: 700;
+  color: #FAFAFA;
+  margin-bottom: 136px;
+}
+.contact .contact_right button {
+  width: 218px;
+  height: 48px;
+  border: none;
+  border-radius: 62px;
+  background: #3375FF;
+  font-size: 18px;
+  font-weight: 600;
+  color: #FFFFFF;
 }/*# sourceMappingURL=main.css.map */

@@ -245,6 +245,7 @@
 
 // Section3
 .service{
+    margin-bottom: 120px;
     h1{
         font-size: 52px;
         line-height: 64px;
@@ -264,9 +265,14 @@
         align-items: center;
         justify-content: space-between;
         .service_cards{
+            width: 442px;
+            height: 500px;
+            background: #F3F6F6 ;
             padding: 48px 32px;
+            position: relative;
             h1{
                 font-size: 32px;
+                line-height: 100%;
                 font-weight: 700;
                 color: #020C31;
                 margin-bottom: 20px;
@@ -282,9 +288,60 @@
                 font-weight: 400;
                 color: #00A9B3;
             }
+            img{
+                width: 80px;
+                height: 80px;
+                position: absolute;
+                right: 40px;
+                bottom: 40px;
+            }
         }
 
     }
 }
+
+// Section4
+.contact{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 106px;
+    border-radius: 16px;
+    background: radial-gradient(95.44% 490.36% at 92.87% 11.25%, #33A9FF 0%, #33FFF3 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+    padding: 32px;
+    img{
+        width: 528px;
+        height: 510px;
+        border-radius: 12px;
+    }
+    .contact_right{
+        padding: 20px;
+        text-align: start;
+        img{
+            width: 80px;
+            height: 80px;
+            margin-bottom: 12px;
+        }
+        h1{
+            font-size: 32px;
+            line-height: 48px;
+            font-weight: 700;
+            color: #FAFAFA;
+            margin-bottom: 136px;
+        }
+        button{
+            width: 218px;
+            height: 48px;
+            border: none;
+            border-radius: 62px;
+            background: #3375FF;
+            font-size: 18px;
+            font-weight: 600;
+            color: #FFFFFF;
+        }
+    }
+}
+
+// Footer
 
 

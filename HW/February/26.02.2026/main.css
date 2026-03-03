@@ -24,6 +24,7 @@ header {
   align-items: flex-start;
   justify-content: flex-start;
   gap: 555px;
+  position: fixed;
 }
 header .header_top {
   display: flex;
@@ -105,6 +106,10 @@ header .header_bottom div p {
 header .header_bottom i {
   font-size: 24px;
   color: #757575;
+}
+
+main {
+  transform: translate(349px);
 }
 
 .container {

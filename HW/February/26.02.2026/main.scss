@@ -25,6 +25,7 @@ header{
     align-items: flex-start;
     justify-content: flex-start;
     gap: 555px;
+    position: fixed;
     .header_top{
         display: flex;
         flex-direction: column;
@@ -112,6 +113,9 @@ header{
 }
 
 // Main
+main{
+    transform: translate(349px);
+}
 .container{
     width: 968px;
 }
