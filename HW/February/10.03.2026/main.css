@@ -1,0 +1,179 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Circe", sans-serif;
+  text-decoration: none;
+  list-style: none;
+  scroll-behavior: smooth;
+}
+
+header {
+  width: 100vw;
+  background: #F1F1F1;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+  position: fixed;
+  z-index: 100;
+}
+
+.container {
+  width: 100%;
+  max-width: 1145px;
+  margin: 0 auto;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 0;
+}
+.navbar img {
+  width: 163px;
+  height: 48px;
+}
+.navbar ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 38px;
+}
+.navbar ul li a {
+  font-size: 16px;
+  font-weight: 400;
+  color: #6A6A6A;
+  text-transform: uppercase;
+}
+.navbar button {
+  width: 240px;
+  height: 44px;
+  border: 1px solid #00C5DE;
+  border-radius: 61px;
+  background: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  font-weight: 400;
+  color: #00C5DE;
+  text-transform: uppercase;
+}
+.navbar select {
+  width: 71px;
+  height: 35px;
+  border: 1px solid #DDDDDD;
+  border-radius: 13px;
+  background: #FFFFFF;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 400;
+  color: #000000;
+}
+.navbar select:focus {
+  outline: none;
+}
+
+main {
+  padding-top: 205px;
+}
+
+.showcase {
+  text-align: center;
+}
+.showcase h1 {
+  font-size: 64px;
+  line-height: 77px;
+  font-weight: 700;
+  color: #00C5DE;
+  margin-bottom: -7px;
+}
+.showcase p {
+  font-size: 24px;
+  line-height: 77px;
+  font-weight: 400;
+  color: #6A6A6A;
+  margin-bottom: 32px;
+}
+.showcase button {
+  width: 238px;
+  height: 50;
+  border: none;
+  border-radius: 61px;
+  background: #00C5DE;
+  font-size: 14px;
+  line-height: 40px;
+  font-weight: 800;
+  color: #FFFFFF;
+}
+.showcase .camera {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translate(0px, -121px);
+}
+.showcase .camera .second {
+  width: 427px;
+  height: 427px;
+  transform: translate(-313px, 120px);
+}
+.showcase .camera .first {
+  width: 786px;
+  height: 525px;
+  transform: translate(-1115px);
+}
+.showcase .camera .third {
+  width: 350px;
+  height: 196px;
+  transform: translate(365px, 105px) rotate(180deg);
+}
+.showcase .camera .fourth {
+  width: 213px;
+  height: 167px;
+  transform: translate(843px, 120px) rotate(180deg);
+}
+.showcase .camera .fifth {
+  width: 266px;
+  height: 398px;
+  transform: translate(1305px, 0px);
+}
+
+.oportunities {
+  text-align: center;
+}
+.oportunities h1 {
+  font-size: 36px;
+  line-height: 77px;
+  font-weight: 700;
+  color: #364C76;
+  margin-bottom: 40px;
+}
+.oportunities .oportunities_box {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  align-content: center;
+  flex-wrap: wrap;
+}
+.oportunities .oportunities_box .cards {
+  width: 360px;
+  text-align: center;
+  margin-bottom: 57px;
+}
+.oportunities .oportunities_box .cards img {
+  width: 360px;
+  height: 211px;
+  border-radius: 20px;
+  margin-bottom: 47px;
+}
+.oportunities .oportunities_box .cards h2 {
+  font-size: 20px;
+  line-height: 37px;
+  font-weight: 700;
+  color: #00C5DE;
+}
+.oportunities .oportunities_box .cards p {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 350;
+  color: #414141;
+}/*# sourceMappingURL=main.css.map */
