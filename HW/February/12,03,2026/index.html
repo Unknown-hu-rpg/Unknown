@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style>
+        body{
+            font-family: 'Rubik',sans-serif;
+        }
+        .container{
+            width: 100%;
+            max-width: 1208px;
+            margin: 0 auto;
+        }
+        header{
+            box-shadow: 2px 4px 8px 0px #0000001A;
+        }
+        .cards{
+            box-shadow: 1px 2px 4px 0px #0000001A;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="">
+        <div class="container">
+            <div class="navbar flex items-center justify-between p-[20px] bg-[#FFFFFF]">
+                <img class="w-[152px] h-[32px]" src="./Images/logo.png" alt="Logo">
+                <div class="form flex items-center justify-center gap-[16px]">
+                    <a href=""><button class="w-[140px] h-[40px] rounded-[4px] text-center bg-[#70C05B] felx items-center justify-center gap-[8px] text-[#FFFFFF] text-[16px] text-normal"><i class="fa-solid fa-bars text-[22px] text-[#FFFFFF]"></i> Каталог</button></a>
+                    <form class="w-[361px] h-[40px] p-[8px] border-[1px] border-[solid] border-[#70C05B] rounded-[4px]" action="">
+                        <input class="w-[90%] pl-[8px] outline-none" type="search" placeholder="Найти товар">
+                        <i class="fa-solid fa-magnifying-glass text-[18px] text-[#414141]"></i>
+                    </form>
+                </div>
+                <div class="icons_box flex items-center justify-center gap-[24px]">
+                    <div class="icons text-center">
+                        <i class="fa-regular fa-heart text-[20px] text-[#414141]"></i>
+                        <p class="text-[12px] text-normal mt-[8px]">Избранное</p>
+                    </div>
+                    <div class="icons text-center">
+                        <i class="fa-solid fa-box-open text-[20px] text-[#414141]"></i>
+                        <p class="text-[12px] text-normal mt-[8px]">Продукты</p>
+                    </div>
+                    <div class="icons text-center">
+                        <i class="fa-solid fa-cart-shopping text-[20px] text-[#414141]"></i>
+                        <p class="text-[12px] text-normal mt-[8px]">Корзина</p>
+                    </div>
+                </div>
+                <div class="account flex items-center justify-center gap-[10px]">
+                    <img class="w-[40px] h-[40px] rounded-[50%]" src="./Images/Account.png" alt="Account">
+                    <div class="flex items-center justify-center gap-[18px]">
+                        <h2 class="text-[16px] text-normal text-[#232323]">Алексей</h2>
+                        <i class="fa-solid fa-angle-down text-[20px] text-[#414141]"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="bg-[#FBF8EC]">
+        <section class="bg-[url(./Images/background.svg)] bg-[#FFFFFF]">
+            <div class="container">
+                <div class="flex items-center justify-center gap-[18px]">
+                    <img class="w-[303px] h-[202px]" src="./Images/Section1.png" alt="Section1">
+                    <h1 class="text-[48px] text-bold text-[#414141]">Доставка бесплатно от 1000 ₽</h1>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container">
+                <div class="discount mt-[80px]">
+                    <h1 class="text-[36px] text-[bold] text-[#414141] mb-[40px]">Акции</h1>
+                    <div class="discount_box flex items-center justify-between">
+                        <div class="cards relative w-[272px] bg-[#FFFFFF] shadow-sm">
+                            <img class="w-[272px] h-[160px]" src="./Images/Блины.png" alt="Блины">
+                            <div class="w-[32px] h-[32px] absolute top-[8px] right-[8px] rounded-[4px] bg-[#F3F2F1] opacity-[50%] text-center"><i class="fa-regular fa-heart text-[24px] text-center"></i></div>
+                            <div class="w-[56px] h-[32px] rounded-[4px] bg-[#FF6633] text-center p-[4px] absolute top-[118px] left-[10px]"><p class="text-[16px] text-normal text-[#FFFFFF]">-50%</p></div>
+                            <div class="bottom p-[8px]">
+                                <div class="price flex items-center justify-between mt-[8px]">
+                                    <div>
+                                        <h2 class="text-[18px] text-bold text-[#414141]">44,50 ₽</h2>
+                                        <p class="text-[12px] text-normal text-[#BFBFBF]">С картой</p>
+                                    </div>
+                                    <div>
+                                        <h2 class="text-[18px] text-normal text-[#606060]">50,50 ₽</h2>
+                                        <p class="text-[12px] text-normal text-[#BFBFBF]">Наличкой</p>
+                                    </div>
+                                </div>
+                                <p class="text-[16px]/[150%] text-normal text-[#414141] mt-[8px]">Г/Ц Блинчики с мясом вес, <br>Россия</p>
+                                <div class="stars mt-[8px] mb-[8px]">
+                                    <i class="fa-solid fa-star text-[16px] text-[#FF6633]"></i>
+                                    <i class="fa-solid fa-star text-[16px] text-[#FF6633]"></i>
+                                    <i class="fa-solid fa-star text-[16px] text-[#BFBFBF]"></i>
+                                    <i class="fa-solid fa-star text-[16px] text-[#BFBFBF]"></i>
+                                    <i class="fa-solid fa-star text-[16px] text-[#BFBFBF]"></i>
+                                </div>
+                                <a href=""><button class="w-[256px] h-[40px] border-[1px] border-[solid] border-[#70C05B] rounded-[4px] text-[16px] text-normal text-[#70C05B]">В корзину</button></a>
+                            </div>
+                        </div>
+                        <div class="cards relative w-[272px] bg-[#FFFFFF] shadow-sm">
+                            <img class="w-[272px] h-[160px]" src="./Images/Кефир.png" alt="Блины">
+                            <div class="w-[32px] h-[32px] absolute top-[8px] right-[8px] rounded-[4px] bg-[#F3F2F1] opacity-[50%] text-center"><i class="fa-regular fa-heart text-[24px] text-center"></i></div>
+                            <div class="w-[56px] h-[32px] rounded-[4px] bg-[#FF6633] text-center p-[4px] absolute top-[118px] left-[10px]"><p class="text-[16px] text-normal text-[#FFFFFF]">-50%</p></div>
+                            <div class="bottom p-[8px]">
+                                <div class="price flex items-center justify-between mt-[8px]">
+                                    <div>
+                                        <h2 class="text-[18px] text-bold text-[#414141]">44,50 ₽</h2>
+                                        <p class="text-[12px] text-normal text-[#BFBFBF]">С картой</p>
+                                    </div>
+                                    <div>
+                                        <h2 class="text-[18px] text-normal text-[#606060]">50,50 ₽</h2>
+                                        <p class="text-[12px] text-normal text-[#BFBFBF]">Наличкой</p>
+                                    </div>
+                                </div>
+                                <p class="text-[16px]/[150%] text-normal text-[#414141] mt-[8px]">Молоко ПРОСТОКВАШИНО паст. питьевое цельное отборное...</p>
+                                <div class="stars mt-[8px] mb-[8px]">
+                                    <i class="fa-solid fa-star text-[16px] text-[#FF6633]"></i>
+                                    <i class="fa-solid fa-star text-[16px] text-[#FF6633]"></i>
+                                    <i class="fa-solid fa-star text-[16px] text-[#FF6633]"></i>
+                                    <i class="fa-solid fa-star text-[16px] text-[#BFBFBF]"></i>
+                                    <i class="fa-solid fa-star text-[16px] text-[#BFBFBF]"></i>
+                                </div>
+                                <a href=""><button class="w-[256px] h-[40px] border-[1px] border-[solid] border-[#70C05B] rounded-[4px] text-[16px] text-normal text-[#70C05B]">В корзину</button></a>
+                            </div>
+                        </div>
+                        <div class="cards relative w-[272px] bg-[#FFFFFF] shadow-sm">
+                            <img class="w-[122px] h-[160px] ml-[auto] mr-[auto]" src="./Images/Колбаса.png" alt="Блины">
+                            <div class="w-[32px] h-[32px] absolute top-[8px] right-[8px] rounded-[4px] bg-[#F3F2F1] opacity-[50%] text-center"><i class="fa-regular fa-heart text-[24px] text-center"></i></div>
+                            <div class="w-[56px] h-[32px] rounded-[4px] bg-[#FF6633] text-center p-[4px] absolute top-[118px] left-[10px]"><p class="text-[16px] text-normal text-[#FFFFFF]">-50%</p></div>
+                            <div class="bottom p-[8px]">
+                                <div class="price flex items-center justify-between mt-[8px]">
+                                    <div>
+                                        <h2 class="text-[18px] text-bold text-[#414141]">44,50 ₽</h2>
+                                        <p class="text-[12px] text-normal text-[#BFBFBF]">С картой</p>
+                                    </div>
+                                    <div>
+                                        <h2 class="text-[18px] text-normal text-[#606060]">50,50 ₽</h2>
+                                        <p class="text-[12px] text-normal text-[#BFBFBF]">Наличкой</p>
+                                    </div>
+                                </div>
+                                <p class="text-[16px]/[150%] text-normal text-[#414141] mt-[8px]">Колбаса сырокопченая МЯСНАЯ ИСТОРИЯ Сальчичон и Тоскан...</p>
+                                <div class="stars mt-[8px] mb-[8px]">
+                                    <i class="fa-solid fa-star text-[16px] text-[#FF6633]"></i>
+                                    <i class="fa-solid fa-star text-[16px] text-[#FF6633]"></i>
+                                    <i class="fa-solid fa-star text-[16px] text-[#FF6633]"></i>
+                                    <i class="fa-solid fa-star text-[16px] text-[#FF6633]"></i>
+                                    <i class="fa-solid fa-star text-[16px] text-[#FF6633]"></i>
+                                </div>
+                                <a href=""><button class="w-[256px] h-[40px] border-[1px] border-[solid] border-[#70C05B] rounded-[4px] text-[16px] text-normal text-[#70C05B]">В корзину</button></a>
+                            </div>
+                        </div>
+                        <div class="cards relative w-[272px] bg-[#FFFFFF] shadow-sm">
+                            <img class="w-[122px] h-[160px] ml-[auto] mr-[auto]" src="./Images/Сосиски.png" alt="Блины">
+                            <div class="w-[32px] h-[32px] absolute top-[8px] right-[8px] rounded-[4px] bg-[#F3F2F1] opacity-[50%] text-center"><i class="fa-regular fa-heart text-[24px] text-center"></i></div>
+                            <div class="w-[56px] h-[32px] rounded-[4px] bg-[#FF6633] text-center p-[4px] absolute top-[118px] left-[10px]"><p class="text-[16px] text-normal text-[#FFFFFF]">-50%</p></div>
+                            <div class="bottom p-[8px]">
+                                <div class="price flex items-center justify-between mt-[8px]">
+                                    <div>
+                                        <h2 class="text-[18px] text-bold text-[#414141]">44,50 ₽</h2>
+                                        <p class="text-[12px] text-normal text-[#BFBFBF]">С картой</p>
+                                    </div>
+                                    <div>
+                                        <h2 class="text-[18px] text-normal text-[#606060]">50,50 ₽</h2>
+                                        <p class="text-[12px] text-normal text-[#BFBFBF]">Наличкой</p>
+                                    </div>
+                                </div>
+                                <p class="text-[16px]/[150%] text-normal text-[#414141] mt-[8px]">Сосиски вареные МЯСНАЯ ИСТОРИЯ Молочные и С сыро...</p>
+                                <div class="stars mt-[8px] mb-[8px]">
+                                    <i class="fa-solid fa-star text-[16px] text-[#FF6633]"></i>
+                                    <i class="fa-solid fa-star text-[16px] text-[#FF6633]"></i>
+                                    <i class="fa-solid fa-star text-[16px] text-[#FF6633]"></i>
+                                    <i class="fa-solid fa-star text-[16px] text-[#FF6633]"></i>
+                                    <i class="fa-solid fa-star-half-stroke text-[#FF6633]"></i>
+                                </div>
+                                <a href=""><button class="w-[256px] h-[40px] border-[1px] border-[solid] border-[#70C05B] rounded-[4px] text-[16px] text-normal text-[#70C05B]">В корзину</button></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container">
+                <div class="new_items mt-[120px]">
+                    <h1 class="text-[36px] text-[bold] text-[#414141] mb-[40px]">Новинки</h1>
+                    <div class="new_items_box flex items-center justify-between">
+                        <div class="cards relative w-[272px] bg-[#FFFFFF] shadow-sm">
+                            <img class="w-[272px] h-[160px]" src="./Images/Капченая.png" alt="Блины">
+                            <div class="w-[32px] h-[32px] absolute top-[8px] right-[8px] rounded-[4px] bg-[#F3F2F1] opacity-[50%] text-center"><i class="fa-regular fa-heart text-[24px] text-center"></i></div>
+                            <!-- <div class="w-[56px] h-[32px] rounded-[4px] bg-[#FF6633] text-center p-[4px] absolute top-[118px] left-[10px]"><p class="text-[16px] text-normal text-[#FFFFFF]">-50%</p></div> -->
+                            <div class="bottom p-[8px]">
+                                <div class="price flex items-center justify-between mt-[8px]">
+                                    <div>
+                                        <h2 class="text-[18px] text-bold text-[#414141]">599,99 ₽</h2>
+                                        <!-- <p class="text-[12px] text-normal text-[#BFBFBF]">С картой</p> -->
+                                    </div>
+                                    <!-- <div>
+                                        <h2 class="text-[18px] text-normal text-[#606060]">50,50 ₽</h2>
+                                        <p class="text-[12px] text-normal text-[#BFBFBF]">Наличкой</p>
+                                    </div> -->
+                                </div>
+                                <p class="text-[16px]/[150%] text-normal text-[#414141] mt-[8px]">Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»</p>
+                                <div class="stars mt-[8px] mb-[8px]">
+                                    <i class="fa-solid fa-star text-[16px] text-[#FF6633]"></i>
+                                    <i class="fa-solid fa-star text-[16px] text-[#FF6633]"></i>
+                                    <i class="fa-solid fa-star text-[16px] text-[#BFBFBF]"></i>
+                                    <i class="fa-solid fa-star text-[16px] text-[#BFBFBF]"></i>
+                                    <i class="fa-solid fa-star text-[16px] text-[#BFBFBF]"></i>
+                                </div>
+                                <a href=""><button class="w-[256px] h-[40px] border-[1px] border-[solid] border-[#70C05B] rounded-[4px] text-[16px] text-normal text-[#70C05B]">В корзину</button></a>
+                            </div>
+                        </div>
+                        <div class="cards relative w-[272px] bg-[#FFFFFF] shadow-sm">
+                            <img class="w-[122px] h-[160px] ml-[auto] mr-[auto]" src="./Images/Колбаса.png" alt="Блины">
+                            <div class="w-[32px] h-[32px] absolute top-[8px] right-[8px] rounded-[4px] bg-[#F3F2F1] opacity-[50%] text-center"><i class="fa-regular fa-heart text-[24px] text-center"></i></div>
+                            <!-- <div class="w-[56px] h-[32px] rounded-[4px] bg-[#FF6633] text-center p-[4px] absolute top-[118px] left-[10px]"><p class="text-[16px] text-normal text-[#FFFFFF]">-50%</p></div> -->
+                            <div class="bottom p-[8px]">
+                                <div class="price flex items-center justify-between mt-[8px]">
+                                    <div>
+                                        <h2 class="text-[18px] text-bold text-[#414141]">44,50 ₽</h2>
+                                        <!-- <p class="text-[12px] text-normal text-[#BFBFBF]">С картой</p> -->
+                                    </div>
+                                    <!-- <div>
+                                        <h2 class="text-[18px] text-normal text-[#606060]">50,50 ₽</h2>
+                                        <p class="text-[12px] text-normal text-[#BFBFBF]">Наличкой</p>
+                                    </div> -->
+                                </div>
+                                <p class="text-[16px]/[150%] text-normal text-[#414141] mt-[8px]">Колбаса сырокопченая МЯСНАЯ ИСТОРИЯ Сальчичон и Тоскан...</p>
+                                <div class="stars mt-[8px] mb-[8px]">
+                                    <i class="fa-solid fa-star text-[16px] text-[#FF6633]"></i>
+                                    <i class="fa-solid fa-star text-[16px] text-[#FF6633]"></i>
+                                    <i class="fa-solid fa-star text-[16px] text-[#FF6633]"></i>
+                                    <i class="fa-solid fa-star text-[16px] text-[#FF6633]"></i>
+                                    <i class="fa-solid fa-star text-[16px] text-[#FF6633]"></i>
+                                </div>
+                                <a href=""><button class="w-[256px] h-[40px] border-[1px] border-[solid] border-[#70C05B] rounded-[4px] text-[16px] text-normal text-[#70C05B]">В корзину</button></a>
+                            </div>
+                        </div>
+                        <div class="cards relative w-[272px] bg-[#FFFFFF] shadow-sm">
+                            <img class="w-[122px] h-[160px] ml-[auto] mr-[auto]" src="./Images/Сосиски.png" alt="Блины">
+                            <div class="w-[32px] h-[32px] absolute top-[8px] right-[8px] rounded-[4px] bg-[#F3F2F1] opacity-[50%] text-center"><i class="fa-regular fa-heart text-[24px] text-center"></i></div>
+                            <!-- <div class="w-[56px] h-[32px] rounded-[4px] bg-[#FF6633] text-center p-[4px] absolute top-[118px] left-[10px]"><p class="text-[16px] text-normal text-[#FFFFFF]">-50%</p></div> -->
+                            <div class="bottom p-[8px]">
+                                <div class="price flex items-center justify-between mt-[8px]">
+                                    <div>
+                                        <h2 class="text-[18px] text-bold text-[#414141]">44,50 ₽</h2>
+                                        <!-- <p class="text-[12px] text-normal text-[#BFBFBF]">С картой</p> -->
+                                    </div>
+                                    <!-- <div>
+                                        <h2 class="text-[18px] text-normal text-[#606060]">50,50 ₽</h2>
+                                        <p class="text-[12px] text-normal text-[#BFBFBF]">Наличкой</p>
+                                    </div> -->
+                                </div>
+                                <p class="text-[16px]/[150%] text-normal text-[#414141] mt-[8px]">Сосиски вареные МЯСНАЯ ИСТОРИЯ Молочные и С сыро...</p>
+                                <div class="stars mt-[8px] mb-[8px]">
+                                    <i class="fa-solid fa-star text-[16px] text-[#FF6633]"></i>
+                                    <i class="fa-solid fa-star text-[16px] text-[#FF6633]"></i>
+                                    <i class="fa-solid fa-star text-[16px] text-[#FF6633]"></i>
+                                    <i class="fa-solid fa-star text-[16px] text-[#FF6633]"></i>
+                                    <i class="fa-solid fa-star-half-stroke text-[#FF6633]"></i>
+                                </div>
+                                <a href=""><button class="w-[256px] h-[40px] border-[1px] border-[solid] border-[#70C05B] rounded-[4px] text-[16px] text-normal text-[#70C05B]">В корзину</button></a>
+                            </div>
+                        </div>
+                        <div class="cards relative w-[272px] bg-[#FFFFFF] shadow-sm">
+                            <img class="w-[272px] h-[160px]" src="./Images/Кефир.png" alt="Блины">
+                            <div class="w-[32px] h-[32px] absolute top-[8px] right-[8px] rounded-[4px] bg-[#F3F2F1] opacity-[50%] text-center"><i class="fa-regular fa-heart text-[24px] text-center"></i></div>
+                            <!-- <div class="w-[56px] h-[32px] rounded-[4px] bg-[#FF6633] text-center p-[4px] absolute top-[118px] left-[10px]"><p class="text-[16px] text-normal text-[#FFFFFF]">-50%</p></div> -->
+                            <div class="bottom p-[8px]">
+                                <div class="price flex items-center justify-between mt-[8px]">
+                                    <div>
+                                        <h2 class="text-[18px] text-bold text-[#414141]">44,50 ₽</h2>
+                                        <!-- <p class="text-[12px] text-normal text-[#BFBFBF]">С картой</p> -->
+                                    </div>
+                                    <!-- <div>
+                                        <h2 class="text-[18px] text-normal text-[#606060]">50,50 ₽</h2>
+                                        <p class="text-[12px] text-normal text-[#BFBFBF]">Наличкой</p>
+                                    </div> -->
+                                </div>
+                                <p class="text-[16px]/[150%] text-normal text-[#414141] mt-[8px]">Молоко ПРОСТОКВАШИНО паст. питьевое цельное отборное...</p>
+                                <div class="stars mt-[8px] mb-[8px]">
+                                    <i class="fa-solid fa-star text-[16px] text-[#FF6633]"></i>
+                                    <i class="fa-solid fa-star text-[16px] text-[#FF6633]"></i>
+                                    <i class="fa-solid fa-star text-[16px] text-[#FF6633]"></i>
+                                    <i class="fa-solid fa-star text-[16px] text-[#BFBFBF]"></i>
+                                    <i class="fa-solid fa-star text-[16px] text-[#BFBFBF]"></i>
+                                </div>
+                                <a href=""><button class="w-[256px] h-[40px] border-[1px] border-[solid] border-[#70C05B] rounded-[4px] text-[16px] text-normal text-[#70C05B]">В корзину</button></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container">
+                <div class="popular_be4 mt-[120px]">
+                    <h1 class="text-[36px] text-[bold] text-[#414141] mb-[40px]">Покупали раньше</h1>
+                    <div class="popular_be4_box flex items-center justify-between">
+                        <div class="cards relative w-[272px] bg-[#FFFFFF] shadow-sm">
+                            <img class="w-[122px] h-[160px] ml-[auto] mr-[auto]" src="./Images/Комьайн.png" alt="Комьайн">
+                            <div class="w-[32px] h-[32px] absolute top-[8px] right-[8px] rounded-[4px] bg-[#F3F2F1] opacity-[50%] text-center"><i class="fa-regular fa-heart text-[24px] text-center"></i></div>
+                            <!-- <div class="w-[56px] h-[32px] rounded-[4px] bg-[#FF6633] text-center p-[4px] absolute top-[118px] left-[10px]"><p class="text-[16px] text-normal text-[#FFFFFF]">-50%</p></div> -->
+                            <div class="bottom p-[8px]">
+                                <div class="price flex items-center justify-between mt-[8px]">
+                                    <div>
+                                        <h2 class="text-[18px] text-bold text-[#414141]">77,99 ₽</h2>
+                                        <!-- <p class="text-[12px] text-normal text-[#BFBFBF]">С картой</p> -->
+                                    </div>
+                                    <!-- <div>
+                                        <h2 class="text-[18px] text-normal text-[#606060]">50,50 ₽</h2>
+                                        <p class="text-[12px] text-normal text-[#BFBFBF]">Наличкой</p>
+                                    </div> -->
+                                </div>
+                                <p class="text-[16px]/[150%] text-normal text-[#414141] mt-[8px]">Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»</p>
+                                <div class="stars mt-[8px] mb-[8px]">
+                                    <i class="fa-solid fa-star text-[16px] text-[#FF6633]"></i>
+                                    <i class="fa-solid fa-star text-[16px] text-[#FF6633]"></i>
+                                    <i class="fa-solid fa-star text-[16px] text-[#BFBFBF]"></i>
+                                    <i class="fa-solid fa-star text-[16px] text-[#BFBFBF]"></i>
+                                    <i class="fa-solid fa-star text-[16px] text-[#BFBFBF]"></i>
+                                </div>
+                                <a href=""><button class="w-[256px] h-[40px] border-[1px] border-[solid] border-[#70C05B] rounded-[4px] text-[16px] text-normal text-[#70C05B]">В корзину</button></a>
+                            </div>
+                        </div>
+                        <div class="cards relative w-[272px] bg-[#FFFFFF] shadow-sm">
+                            <img class="w-[122px] h-[160px] ml-[auto] mr-[auto]" src="./Images/Сосиски.png" alt="Блины">
+                            <div class="w-[32px] h-[32px] absolute top-[8px] right-[8px] rounded-[4px] bg-[#F3F2F1] opacity-[50%] text-center"><i class="fa-regular fa-heart text-[24px] text-center"></i></div>
+                            <!-- <div class="w-[56px] h-[32px] rounded-[4px] bg-[#FF6633] text-center p-[4px] absolute top-[118px] left-[10px]"><p class="text-[16px] text-normal text-[#FFFFFF]">-50%</p></div> -->
+                            <div class="bottom p-[8px]">
+                                <div class="price flex items-center justify-between mt-[8px]">
+                                    <div>
+                                        <h2 class="text-[18px] text-bold text-[#414141]">44,50 ₽</h2>
+                                        <!-- <p class="text-[12px] text-normal text-[#BFBFBF]">С картой</p> -->
+                                    </div>
+                                    <!-- <div>
+                                        <h2 class="text-[18px] text-normal text-[#606060]">50,50 ₽</h2>
+                                        <p class="text-[12px] text-normal text-[#BFBFBF]">Наличкой</p>
+                                    </div> -->
+                                </div>
+                                <p class="text-[16px]/[150%] text-normal text-[#414141] mt-[8px]">Сосиски вареные МЯСНАЯ ИСТОРИЯ Молочные и С сыро...</p>
+                                <div class="stars mt-[8px] mb-[8px]">
+                                    <i class="fa-solid fa-star text-[16px] text-[#FF6633]"></i>
+                                    <i class="fa-solid fa-star text-[16px] text-[#FF6633]"></i>
+                                    <i class="fa-solid fa-star text-[16px] text-[#FF6633]"></i>
+                                    <i class="fa-solid fa-star text-[16px] text-[#FF6633]"></i>
+                                    <i class="fa-solid fa-star-half-stroke text-[#FF6633]"></i>
+                                </div>
+                                <a href=""><button class="w-[256px] h-[40px] border-[1px] border-[solid] border-[#70C05B] rounded-[4px] text-[16px] text-normal text-[#70C05B]">В корзину</button></a>
+                            </div>
+                        </div>
+                        <div class="cards relative w-[272px] bg-[#FFFFFF] shadow-sm">
+                            <img class="w-[272px] h-[160px]" src="./Images/Капченая.png" alt="Блины">
+                            <div class="w-[32px] h-[32px] absolute top-[8px] right-[8px] rounded-[4px] bg-[#F3F2F1] opacity-[50%] text-center"><i class="fa-regular fa-heart text-[24px] text-center"></i></div>
+                            <!-- <div class="w-[56px] h-[32px] rounded-[4px] bg-[#FF6633] text-center p-[4px] absolute top-[118px] left-[10px]"><p class="text-[16px] text-normal text-[#FFFFFF]">-50%</p></div> -->
+                            <div class="bottom p-[8px]">
+                                <div class="price flex items-center justify-between mt-[8px]">
+                                    <div>
+                                        <h2 class="text-[18px] text-bold text-[#414141]">599,99 ₽</h2>
+                                        <!-- <p class="text-[12px] text-normal text-[#BFBFBF]">С картой</p> -->
+                                    </div>
+                                    <!-- <div>
+                                        <h2 class="text-[18px] text-normal text-[#606060]">50,50 ₽</h2>
+                                        <p class="text-[12px] text-normal text-[#BFBFBF]">Наличкой</p>
+                                    </div> -->
+                                </div>
+                                <p class="text-[16px]/[150%] text-normal text-[#414141] mt-[8px]">Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»</p>
+                                <div class="stars mt-[8px] mb-[8px]">
+                                    <i class="fa-solid fa-star text-[16px] text-[#FF6633]"></i>
+                                    <i class="fa-solid fa-star text-[16px] text-[#FF6633]"></i>
+                                    <i class="fa-solid fa-star text-[16px] text-[#BFBFBF]"></i>
+                                    <i class="fa-solid fa-star text-[16px] text-[#BFBFBF]"></i>
+                                    <i class="fa-solid fa-star text-[16px] text-[#BFBFBF]"></i>
+                                </div>
+                                <a href=""><button class="w-[256px] h-[40px] border-[1px] border-[solid] border-[#70C05B] rounded-[4px] text-[16px] text-normal text-[#70C05B]">В корзину</button></a>
+                            </div>
+                        </div>
+                        <div class="cards relative w-[272px] bg-[#FFFFFF] shadow-sm">
+                            <img class="w-[272px] h-[160px]" src="./Images/Кефир.png" alt="Блины">
+                            <div class="w-[32px] h-[32px] absolute top-[8px] right-[8px] rounded-[4px] bg-[#F3F2F1] opacity-[50%] text-center"><i class="fa-regular fa-heart text-[24px] text-center"></i></div>
+                            <!-- <div class="w-[56px] h-[32px] rounded-[4px] bg-[#FF6633] text-center p-[4px] absolute top-[118px] left-[10px]"><p class="text-[16px] text-normal text-[#FFFFFF]">-50%</p></div> -->
+                            <div class="bottom p-[8px]">
+                                <div class="price flex items-center justify-between mt-[8px]">
+                                    <div>
+                                        <h2 class="text-[18px] text-bold text-[#414141]">44,50 ₽</h2>
+                                        <!-- <p class="text-[12px] text-normal text-[#BFBFBF]">С картой</p> -->
+                                    </div>
+                                    <!-- <div>
+                                        <h2 class="text-[18px] text-normal text-[#606060]">50,50 ₽</h2>
+                                        <p class="text-[12px] text-normal text-[#BFBFBF]">Наличкой</p>
+                                    </div> -->
+                                </div>
+                                <p class="text-[16px]/[150%] text-normal text-[#414141] mt-[8px]">Молоко ПРОСТОКВАШИНО паст. питьевое цельное отборное...</p>
+                                <div class="stars mt-[8px] mb-[8px]">
+                                    <i class="fa-solid fa-star text-[16px] text-[#FF6633]"></i>
+                                    <i class="fa-solid fa-star text-[16px] text-[#FF6633]"></i>
+                                    <i class="fa-solid fa-star text-[16px] text-[#FF6633]"></i>
+                                    <i class="fa-solid fa-star text-[16px] text-[#BFBFBF]"></i>
+                                    <i class="fa-solid fa-star text-[16px] text-[#BFBFBF]"></i>
+                                </div>
+                                <a href=""><button class="w-[256px] h-[40px] border-[1px] border-[solid] border-[#70C05B] rounded-[4px] text-[16px] text-normal text-[#70C05B]">В корзину</button></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container">
+                <div class="special mt-[120px]">
+                    <h1 class="text-[36px] text-[bold] text-[#414141] mb-[40px]">Специальные предложения</h1>
+                    <div class="special_box flex items-center justify-between">
+                        <div class="left w-[584px] h-[200px] bg-[#FCD5BA] p-[37px] flex items-center justify-center gap-[21px]">
+                            <div class="w-[258px]">
+                                <h2 class="text-[24px] text-[bold] text-[#414141] mb-[]">Оформите карту «Северяночка»</h2>
+                                <p class="text-[16px] text-[normal] text-[#414141]">И получайте бонусы при покупке в магазинах и на сайте</p>
+                            </div>
+                            <img class="w-[207px] h-[138px] rounded-[10px] transform-cpu-[14deg]" src="./Images/Section5_1.jpg" alt="Section5_1">
+                        </div>
+                        <div class="right w-[584px] h-[200px] bg-[#E5FFDE] flex items-center justify-center gap-[21px]">
+                            <div class="w-[258px] m-[37px]">
+                                <h2 class="text-[24px] text-[bold] text-[#414141] mb-[]">Покупайте акционные товары</h2>
+                                <p class="text-[16px] text-[normal] text-[#414141]">И получайте вдвое больше бонусов</p>
+                            </div>
+                            <img class="w-[193px] h-[186px] rounded-[10px] transform-cpu-[14deg]" src="./Images/Section5_2.png" alt="Section5_2">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container">
+                <div class="market mt-[120px]">
+                    <h1 class="text-[36px] text-[bold] text-[#414141] mb-[40px]">Наши магазины</h1>
+                    <div class="market_box mt-[40px]">
+                        <div class="top flex items-center justify-start gap-[24px] mb-[24px]">
+                            <a class="p-[10px] pl-[15px] pr-[15px] bg-[#F3F2F1] rounded-[4px] text-[12px] text-normal text-[#606060]" href="">п.Щельяюр</a>
+                            <a class="p-[10px] pl-[15px] pr-[15px] bg-[#F3F2F1] rounded-[4px] text-[12px] text-normal text-[#606060]" href="">д.Вертеп</a>
+                            <a class="p-[10px] pl-[15px] pr-[15px] bg-[#F3F2F1] rounded-[4px] text-[12px] text-normal text-[#606060]" href="">с.Краснобор</a>
+                            <a class="p-[10px] pl-[15px] pr-[15px] bg-[#F3F2F1] rounded-[4px] text-[12px] text-normal text-[#606060]" href="">д.Диюр</a>
+                        </div>
+                        <img class="w-[100%] h-[354px] rounded-[4px]" src="./Images/Map.png" alt="Map">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container">
+                <div class="article mt-[120px] pb-[80px]">
+                    <h1 class="text-[36px] text-[bold] text-[#414141] mb-[40px]">Статьи</h1>
+                    <div class="article_box flex items-center justify-between">
+                        <div class="cards w-[376px] bg-[#FFFFFF] rounded-[10px]">
+                            <img class="w-[376px] h-[172px] rounded-t-[10px]" src="./Images/Section7_1.png" alt="Mask">
+                            <div class="bottom p-[10px] pb-[22px]">
+                                <p class="text-[12px] text-[normal] text-[#8F8F8F] mt-[10px]">05.03.2021</p>
+                                <h1 class="text-[20px] text-[extrabold] text-[#414141] mt-[10px]">Режим использования масок и перчаток на территории магазинов</h1>
+                                <p class="text-[16px] text-[normal] text-[#414141] mt-[10px] mb-[22px]">Подробная информация о режимах использования масок и перчаток на территории магазинов "ЛЕНТА". Информация обновляется каждый будний день.</p>
+                                <a class="p-[12px] pl-[32px] pr-[32px] bg-[#E5FFDE] rounded-[4px] text-[16px] text-normal text-[#70C05B]" href="">Подробнее</a>
+                            </div>
+                        </div>
+                        <div class="cards w-[376px] bg-[#FFFFFF] rounded-[10px]">
+                            <img class="w-[376px] h-[172px] rounded-t-[10px]" src="./Images/Section7_2.png" alt="Mask">
+                            <div class="bottom p-[10px] pb-[22px]">
+                                <p class="text-[12px] text-[normal] text-[#8F8F8F] mt-[10px]">05.03.2021</p>
+                                <h1 class="text-[20px] text-[extrabold] text-[#414141] mt-[10px]">Весеннее настроение для каждой</h1>
+                                <p class="text-[16px] text-[normal] text-[#414141] mt-[10px] mb-[51px]">8 Марта – это не просто Международный женский день, это ещё день тюльпанов, приятных сюрпризов и праздничных тёплых пожеланий.</p>
+                                <a class="p-[12px] pl-[32px] pr-[32px] bg-[#E5FFDE] rounded-[4px] text-[16px] text-normal text-[#70C05B]" href="">Подробнее</a>
+                            </div>
+                        </div>
+                        <div class="cards w-[376px] bg-[#FFFFFF] rounded-[10px]">
+                            <img class="w-[376px] h-[172px] rounded-t-[10px]" src="./Images/Section7_3.png" alt="Mask">
+                            <div class="bottom p-[10px] pb-[22px]">
+                                <p class="text-[12px] text-[normal] text-[#8F8F8F] mt-[10px]">05.03.2021</p>
+                                <h1 class="text-[20px] text-[extrabold] text-[#414141] mt-[10px]">ЗОЖ или ФАСТФУД. А вы на чьей стороне? Голосуем!</h1>
+                                <p class="text-[16px] text-[normal] text-[#414141] mt-[10px] mb-[22px]">Голосуйте за любимые категории, выбирайте категорию-победителя в мобильном приложении и получайте кешбэк 10% баллами в апреле!</p>
+                                <a class="p-[12px] pl-[32px] pr-[32px] bg-[#E5FFDE] rounded-[4px] text-[16px] text-normal text-[#70C05B]" href="">Подробнее</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="p-[24px] bg-[#F9F4E2] bg-[url(./Images/pattern2.svg)]">
+        <div class="container">
+            <div class="footer_top flex items-center justify-between">
+                <div class="left flex items-center justify-center gap-[40px]">
+                    <img class="w-[64px] h-[44px]" src="./Images/logo_bottom.png" alt="Logo">
+                    <ul class="flex items-center justify-center gap-[40px]">
+                        <li><a class="text-[12px] text-normal text-[#414141]" href="">О компании</a></li>
+                        <li><a class="text-[12px] text-normal text-[#414141]" href="">Контакты</a></li>
+                        <li><a class="text-[12px] text-normal text-[#414141]" href="">Вакансии</a></li>
+                        <li><a class="text-[12px] text-normal text-[#414141]" href="">Статьи</a></li>
+                        <li><a class="text-[12px] text-normal text-[#414141]" href="">Политика обработки персональных данных</a></li>
+                    </ul>
+                </div>
+                <div class="right flex items-center justify-center gap-[40px]">
+                    <div class="icons">
+                        <i class="fa-brands fa-instagram text-[24px] text-[#F44336]"></i>
+                        <i class="fa-brands fa-vk text-[24px] text-[#1E88E5]"></i>
+                        <i class="fa-brands fa-square-facebook text-[24px] text-[#1976D2]"></i>
+                        <i class="fa-brands fa-odnoklassniki text-[24px] text-[#EE8208]"></i>
+                    </div>
+                    <div class="contact flex items-center justify-center gap-[8px]">
+                        <i class="fa-solid fa-phone text-[24px] text-[#414141]"></i>
+                        <a class="text-[16px] text-normal text-[#414141]" href="tel:8 800 777 33 33">8 800 777 33 33</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer_bottom flex items-center justify-end gap-[8px] mt-[16px]">
+                <p class="text-[12px] text-normal text-[#414141]">Дизайн :</p>
+                <img class="w-[100px] h-[10px]" src="./Images/logo-zasovskiy-small-black.svg" alt="logo">
+            </div>
+        </div>
+    </footer>
+    
+</body>
+</html>
